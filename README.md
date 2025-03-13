@@ -1,59 +1,66 @@
-# TareasFront
+# 📌 Frontend de Gestión de Tareas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+## 🚀 Descripción
 
-## Development server
+Este es un proyecto frontend desarrollado en **Angular 19** para gestionar tareas, permitiendo crear, editar y eliminar tareas a través de una API en .NET.
 
-To start a local development server, run:
+## 🛠️ Tecnologías Utilizadas
 
-```bash
-ng serve
+- **Angular 19** - Framework principal.
+- **TypeScript** - Lenguaje de programación.
+- **Bootstrap** - Estilos y diseño responsivo.
+- **RxJS** - Manejo de peticiones HTTP y estados reactivos.
+
+## 📂 Estructura del Proyecto
+
+```
+📁 tareasfront
+ ┣ 📁 src
+ ┃ ┣ 📁 app
+ ┃ ┃ ┣ 📁 services
+ ┃ ┃ ┃ ┗ 📄 tareas.service.ts
+ ┃ ┃ ┗ 📄 app.component.html
+ ┃ ┃ ┗ 📄 app.component.scss
+ ┃ ┃ ┗ 📄 app.component.ts
+ ┃ ┃ ┗ 📄 app.config.ts
+ ┃ ┣ 📁 environments
+ ┃ ┃ ┣ 📄 environments.prod.ts
+ ┃ ┃ ┣ 📄 environments.ts
+ ┃ ┣ 📄 main.ts
+ ┃ ┗ 📄 index.html
+ ┣ 📄 angular.json
+ ┣ 📄 package.json
+ ┣ 📄 README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ⚙️ Instalación y Ejecución
 
-## Code scaffolding
+### 1️⃣ Clonar el repositorio
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```sh
+git clone https://github.com/ingdanielleo/tareasfront.git
+cd tareasfront
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 2️⃣ Instalar dependencias
 
-```bash
-ng generate --help
+```sh
+npm install
 ```
 
-## Building
+## 🔗 Funcionalidades
 
-To build the project run:
+- 📌 **Crear tareas** con título, descripción y estado.
+- ✏️ **Editar tareas** desde el mismo formulario.
+- ❌ **Eliminar tareas** con confirmación.
+- 🔍 **Filtrar tareas** por estado (pendiente/completado).
+- 📄 **Notificaciones** de acciones en la interfaz.
 
-```bash
-ng build
-```
+## 📌 Componentes principales
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **`app.component.ts`**: Maneja la lógica de la UI y las interacciones con el usuario.
+- **`tarea.service.ts`**: Servicio encargado de realizar las peticiones HTTP a la API en .NET.
 
-## Running unit tests
+## 🏆 Autor
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desarrollado por **Jorge Daniel Leon Prieto** | 🚀 2025
